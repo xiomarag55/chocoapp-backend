@@ -44,11 +44,6 @@ const onListening = () => {
 const port = normalizePort(process.env.PORT || "3002");
 app.set("port", port);
 
-// const server = http.createServer(app);
-// server.on("error", onError);
-// server.on("listening", onListening);
-// server.listen(port);
-
 const server = http.createServer(app);
 const host = 'localhost';
 server.listen(port, host, () => {
