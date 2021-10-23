@@ -45,7 +45,5 @@ const port = normalizePort(process.env.PORT || "3002");
 app.set("port", port);
 
 const server = http.createServer(app);
-const host = 'localhost';
-server.listen(port, host, () => {
-  console.log(`Servidor corriendo en http://${host}:${port}`);
-});
+//const host = 'localhost';
+server.listen(port);
