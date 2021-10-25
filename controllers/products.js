@@ -34,7 +34,7 @@ exports.updateProduct = (req, res) => {
   const id = req.params.id;
   const productUpdate = new Producto({
     _id: id,
-    producto: req.body.role,
+    producto: req.body.producto,
     unidades: req.body.unidades,
     precioUnitario: req.body.precioUnitario,
     valorTotal: req.body.valorTotal,
